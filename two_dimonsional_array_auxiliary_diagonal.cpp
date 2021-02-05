@@ -70,7 +70,6 @@ int main()
     fillArray(arr, size);
     printArr(arr, size);
     printAuxiliaryDiagonal(arr, size);
-    
-    
     deleteDimensionArray(arr, size);
+    return 0;
 }

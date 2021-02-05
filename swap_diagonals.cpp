@@ -20,7 +20,7 @@ void deleteDimensionArray(int** &del_arr, size_t size)
     delete [] del_arr;
     del_arr = nullptr;
 }
-// fill array
+
 void fillArray(int** arr, size_t size)
 {
     for(int i = 0; i < size; ++i)
@@ -35,7 +35,6 @@ void fillArray(int** arr, size_t size)
 // print dimensional array
 void printArr(int** arr, size_t size)
 {
-    std::cout << "Two dimensional matrix" << std::endl;
     for(int i = 0; i < size; ++i)
     {
         for(int j = 0; j < size; ++j)
@@ -51,15 +50,18 @@ void printArr(int** arr, size_t size)
         std::cout << std::endl;
     }
 }
-//print main diagonal
-void printMainDiagonal(int** arr, size_t size)
+
+void SwapDiagonals(int** swap_arr, size_t size)
 {
-    std::cout << "Main diagonal" << std::endl;
+    int tmp = 0;
+    std::cout << "Swaped diagonals" << std::endl;
     for(int i = 0; i < size; ++i)
     {
-        std::cout << arr[i][i] << " ";
+        tmp = swap_arr[i][i];
+        swap_arr[i][i] = swap_arr[size - i - 1][i];
+        swap_arr[size - i - 1][i] = tmp;
     }
-    std::cout << std::endl;
+    printArr(swap_arr, size);
 }
 
 int main()
@@ -69,8 +71,11 @@ int main()
     std::cin >> size;
     int** arr = createDimensionArray(size);
     fillArray(arr, size);
+    std::cout << "Two dimensional matrix" << std::endl;
     printArr(arr, size);
-    printMainDiagonal(arr, size);
+    SwapDiagonals(arr, size);
     deleteDimensionArray(arr, size);
     return 0;
 }
+
+

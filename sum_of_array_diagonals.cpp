@@ -91,7 +91,7 @@ int main()
     printArr(arr, size);
     int result_of_diagonals_sum = SumOfDiagonals(arr, size);
     std::cout << "Sum of diagonals is: "  << result_of_diagonals_sum << std::endl;
-    
     deleteDimensionArray(arr, size);
+    return 0;
 }
 

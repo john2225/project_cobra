@@ -80,5 +80,6 @@ int main()
     delete [] arg1Arr;
     delete [] arg2Arr;
     delete [] result;
+    return 0;
 }
 
