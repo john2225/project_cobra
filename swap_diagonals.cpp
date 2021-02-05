@@ -75,7 +75,10 @@ int main()
     printArr(arr, size);
     SwapDiagonals(arr, size);
     deleteDimensionArray(arr, size);
+<<<<<<< HEAD
     return 0;
+=======
+>>>>>>> 184927724918c039273f5986b166dd679338dd9a
 }
 
 
