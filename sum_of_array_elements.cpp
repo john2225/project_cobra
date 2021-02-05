@@ -72,7 +72,6 @@ int main()
 
     PrintArr(arg1Arr, arg1ArrSize);
     PrintArr(arg2Arr, arg2ArrSize);
-    
     int resultSize;
     int* result = SumofArrs(arg1Arr, arg1ArrSize, arg2Arr, arg2ArrSize, resultSize);
     std:: cout << "Sum of array elements is: ";

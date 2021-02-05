@@ -1,6 +1,6 @@
 #include <iostream>
 //create two demonsioal array
-int** createDimensionArray(size_t size)
+int** CreateDimensionArray(size_t size)
 {
     int** dim_arr = new int* [size];
     for(int i = 0; i < size; ++i)
