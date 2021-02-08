@@ -30,4 +30,5 @@ int main()
     std::cout << "Enter a word or sentence: ";
     getline(std::cin, Str);
     RepeatedSymbol(Str);
+    return 0;
 }
