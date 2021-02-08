@@ -30,12 +30,13 @@ void PrintMatrixArr(int** arr, size_t size)
             if(arr[i][j] < 10)
             {
                 std::cout << arr[i][j] << "  ";
-                }else
-                {
-                    std::cout << arr[i][j] << " ";
-                }
+            }
+            else
+            {
+                std::cout << arr[i][j] << " ";
+            }
         }
-            std::cout << std::endl;
+        std::cout << std::endl;
     }
 }
 
