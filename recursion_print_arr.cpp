@@ -3,8 +3,6 @@
 int* create_fillArr(size_t);
 void printArrRecursive(int*, size_t);
 
-
-
 int main()
 {
     size_t size = 0;
