@@ -12,7 +12,7 @@ int main()
     std::cout << "Enter k digit: ";
     std::cin >> k;
     number = Int2Arr(number, k);
-    std::cout << number << " " <<std::endl;
+    std::cout << "Digit is: " << k <<  "  Number is: " << number <<std::endl;
     return 0;
 }
 
